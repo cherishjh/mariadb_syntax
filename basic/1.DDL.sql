@@ -49,13 +49,13 @@ DROP database
 DROP TABLE 테이블명
 
 -- 테이블의 데이터만을 지우고 싶을때 
-DELETE FROM 테이블명
-TRUNCATE TABLE 테이블명
+DELETE FROM 테이블명 WHERE 필드 이름=데이터값
+TRUNCATE TABLE 테이블명 WHERE 필드 이름= 데이터값
 
 -- IF EXISTS
 DROP DATABASE IF EXISTS abc;
 
-
+-
 
 
 

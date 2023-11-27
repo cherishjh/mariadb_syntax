@@ -84,3 +84,15 @@ delimiter ;
 -- () 안에 변수 명을 넣어줄 필요가 없음
 
 -- 함수의 기본 꼴: 함수명();
+
+delimiter //
+CREATE PROCEDURE addPostt()             
+begin 
+   declare calculator int default 0;
+    while calculator<20 Do
+        insert into post(contents) value("hi");
+        insert into post(title) value(concat("Hello ", calculator));
+        set calculator = calculator+1;
+    end while;
+end //
+delimiter ;
